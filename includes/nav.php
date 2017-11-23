@@ -36,6 +36,10 @@
                     echo "<li>";
                     echo "<a href='./registration.php'>Register</a>";
                     echo "</li>";
+                  } else {
+                    echo "<li>";
+                    echo "<a href='../includes/logout.php'>Log Out</a>";
+                    echo "</li>";
                   }
                 ?>
                 
