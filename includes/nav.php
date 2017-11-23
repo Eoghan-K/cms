@@ -31,10 +31,13 @@
                 <li>
                     <a href="admin">Admin</a>
                 </li>
-                
-                <li>
-                    <a href="./registration.php">Register</a>
-                </li>
+                <?php 
+                  if(!isset($_SESSION["user_role"])){
+                    echo "<li>";
+                    echo "<a href='./registration.php'>Register</a>";
+                    echo "</li>";
+                  }
+                ?>
                 
                 <?php
                     if(isset($_SESSION["user_role"])){
